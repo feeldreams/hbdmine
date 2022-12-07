@@ -115,7 +115,7 @@ p{margin:1.5em 0;transition:all .3s ease;}
 </b></p>
 
 <p><b><img src="https://feeldreams.github.io/g5.gif"/><br>
-	<span>Selamat Ulang Tahun Sayang 🤭❤️</span>
+	<span>Selamat Ulang Tahun Endi Sayang 😍❤️</span>
 </b></p>
 
 <p><b><img src="https://feeldreams.github.io/mndkat.gif"/><br>
@@ -123,7 +123,7 @@ p{margin:1.5em 0;transition:all .3s ease;}
 </b></p>
 
 <p><b><img src="https://feeldreams.github.io/gumush.gif"/><br>
-	<span style="font-size:14px">Semoga dihari spesialmu ini kamu menjadi pribadi yang lebih baik,</span>
+	<span style="font-size:14px">Semoga di hari bertambahnya usiamu yang ke 20 tahun ini kamu menjadi pribadi yang lebih baik,</span>
 </b></p>
 
 <p><b><img src="https://feeldreams.github.io/pandacium.gif"/><br>
@@ -176,23 +176,23 @@ p{margin:1.5em 0;transition:all .3s ease;}
   const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040',}); const swalsy = Swal.mixin({confirmButtonText: 'Iya', allowOutsideClick: false,}); const swalst = Swal.mixin({allowOutsideClick: false, showConfirmButton: false, timer: 1000, timerProgressBar: true, didOpen: () => {Swal.showLoading();const b = Swal.getHtmlContainer().querySelector('b');timerInterval = setInterval(() => {Swal.getTimerLeft()}, 100)},willClose: () => {clearInterval(timerInterval)}}); const style = document.createElement('style');
   function play() {var audio = new Audio('' + linkmp3);audio.play();} const body = document.querySelector("body");function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
   function StartMarqueeL(){imglewat.style="opacity:1;height:100px;";var marquee = document.getElementById ("imglewat");marquee.start();}function StopMarqueeL(){var marquee = document.getElementById ("imglewat");marquee.stop();}StopMarqueeL(); 
-  function akhiran(){Tombol.style="transition:all .3s ease;opacity:0;transform: scale(.1);";setTimeout(startmq,4000);bodyblur.style="opacity:.4;animation:none";beneranblur.style="-webkit-backdrop-filter:blur(5px); backdrop-filter:blur(5px)";wallpaper.style="transform: scale(1.6)";pergeseran.style="display:none";StartMarqueeL();idgeser.innerHTML = "";idkalimat.innerHTML = akhirkata2;idgeser.style = "opacity:1;transform: scale(1);font-size:16px;font-weight:400;margin:0 30px;margin-top:15px;";setInterval(berjatuhan,300);setTimeout(aksiakhir,800);}
+  function akhiran(){Tombol.style="transition:all .3s ease;opacity:0;transform: scale(.1);";setTimeout(startmq,4000);bodyblur.style="opacity:.4;animation:none";beneranblur.style="-webkit-backdrop-filter:blur(5px); backdrop-filter:blur(5px)";wallpaper.style="transform: scale(1.6)";pergeseran.style="display:none";StartMarqueeL();idgeser.innerHTML = "";idkalimat.innerHTML = akhirkata2;idgeser.style = "opacity:1;transform: scale(1);font-size:16px;font-weight:400;margin:0 30px;margin-top:15px;";setInterval(berjatuhan,300);setTimeout(aksiakhir,800);setTimeout(showpalingakhir,4000);setTimeout(tombol,4000);}
   function startmq(){var marquee = document.getElementById ("palingakhir");marquee.start();}function stopmq(){var marquee = document.getElementById ("palingakhir");marquee.stop();}stopmq();
   async function menuju(){await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
   var aa=0,akhirkata;akhirkata = "";function aksiakhir() {if(aa<akhirkata.length){idgeser.innerHTML += akhirkata.charAt(aa);aa++;setTimeout(aksiakhir,65);}
-    if(aa==akhirkata.length){idkalimat.style = "opacity:1;transform: scale(1);font-size:16px;margin-top:20px";setTimeout(showpalingakhir,1100);}
-   } function showpalingakhir(){palingakhir.style = "opacity:1;transform: scale(1);font-size:16px;margin-top:20px";tombol();}
+    if(aa==akhirkata.length){idkalimat.style = "opacity:1;transform: scale(1);font-size:16px;margin-top:20px";}
+   } function showpalingakhir(){palingakhir.style = "opacity:1;transform: scale(1);font-size:18px;margin-top:20px";}
 </script>
 
 <script type="text/javascript">
        async function jawab(){
            var { value: jawaban } = await swals.fire({
-               title: 'Isi Pesan Kamu', input: 'text', allowOutsideClick: false, showCancelButton: false,
+               title: 'Isi Pesan Kamu', input: 'textarea', allowOutsideClick: false, showCancelButton: false,
            });
-           if(jawaban && jawaban.length < 16){
+           if(jawaban && jawaban.length < 1001){
            	window.jawaban = jawaban;pesanwhatsapp = jawaban;menuju();
            } else {
-               await swals.fire('Ups!', 'Kolom tidak boleh kosong atau lebih dari 15 karakter, ya!');
+               await swals.fire('Ups!', 'Kolom tidak boleh kosong atau lebih dari 1000 karakter, ya!');
            }
        }
         
@@ -203,7 +203,7 @@ p{margin:1.5em 0;transition:all .3s ease;}
        
             akhirkata = "Aku sayang sama kamu 😍❤️      ";
             akhirkata2 = "Tetep stay sama aku yaa~";
-            palingakhir.innerHTML = "Happy Birthday Sayang!!!";
+            palingakhir.innerHTML = "Happy Birthday yang ke-20th Endi Sayang! 🤍";
         }
         pertama();
         
